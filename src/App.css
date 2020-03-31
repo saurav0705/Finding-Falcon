@@ -11,3 +11,8 @@ body { -ms-overflow-style: none; }
 .head{
   margin-bottom: 10vh;
 }
+
+.content{
+  position: relative;
+  height: 100%;
+}

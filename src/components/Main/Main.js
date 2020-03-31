@@ -7,6 +7,7 @@ import Toast from '../Toast/Toast';
 import Button from '../Button/Button';
 import {useHistory} from 'react-router-dom';
 import Loading from '../Loading/Loading';
+import { getDefaultNormalizer } from '@testing-library/react';
 
 const Main = () => {
     const [planets,setPlanets] = useState([]);
@@ -87,6 +88,21 @@ const Main = () => {
         }
 
     }
+
+    const timeTaken = (pl) => {
+        let distance = planets.find(planet => {if(planet.name===pl){return planet.distance}})
+        distance = distance.distance;
+        let ship = result.get(planet);
+        let speed = ships.find(sh => {if(sh.name === ship){
+            return sh;
+        }}) 
+        speed = speed.speed;
+        console.log(speed);
+        console.log(distance);
+        return distance/speed;
+
+    };
+
     const goToJourney = ()=>{
         setMsg('Finding Falcon....')
         // setWarning('Finding Falcon...');
@@ -107,7 +123,9 @@ const Main = () => {
             })
         })
         .then(resp => resp.json())
-        .then(resp => {if(resp['status'] === 'success'){setWarning(`Found Falcon on ${resp['planet_name']}`);setRandom(Math.random());setTimeout(()=>{history.push('/')},1500)}else{setWarning('Unable to find falcon');setRandom(Math.random());};setMsg("Find Falcon");})
+        .then(resp => {if(resp['status'] === 'success'){setWarning(`Found Falcon on ${resp['planet_name']} in  ${timeTaken(resp['planet_name'])} Hour`);setRandom(Math.random());
+        setTimeout(()=>{history.push('/')},4000)
+    }else{setWarning('Unable to find falcon');setRandom(Math.random());};setMsg("Find Falcon");})
     }
     const  toggle =() => {
         setShow(!show);

@@ -4,7 +4,7 @@ import {useHistory} from 'react-router-dom';
 const Home = () => {
     let history = useHistory();
     return (
-        <div >
+        <div className="content">
             <div className="center">
             <img  src="bird.png"/></div>
             <div className="description">
