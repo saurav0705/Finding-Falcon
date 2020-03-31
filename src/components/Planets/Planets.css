@@ -1,0 +1,31 @@
+.planet-container{
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    transition-duration: 300ms;
+    
+}
+
+.active-planet{
+    transform: scale(1.01,1.01);
+    background-color: #FF6600;
+}
+.planet-container:hover{
+    transform: scale(1.01,1.01);
+    background-color: #FF6600;
+}
+
+.planet-heading{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.planet-distance{
+    font-size: 20px;
+    font-weight: 500;
+}
+

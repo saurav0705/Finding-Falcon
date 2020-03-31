@@ -1,0 +1,6 @@
+{
+    "planets":"https://findfalcone.herokuapp.com/planets",
+    "ships":"https://findfalcone.herokuapp.com/vehicles",
+    "find":"https://findfalcone.herokuapp.com/find",
+    "token":"https://findfalcone.herokuapp.com/token"
+}

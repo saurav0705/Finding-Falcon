@@ -1,0 +1,35 @@
+.description{
+   font-size: 24px;
+    color: white;
+   text-align: center;
+   margin: 10px;
+   opacity: 1;
+   animation: fadeIn 1s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.button-journey{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin:20px;
+    background-color: #FF6600;
+    border-radius:10px ;
+    transition-duration: 300ms;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.button-journey:hover{
+    background-color:white; 
+    color:#FF6600;
+
+}

@@ -1,0 +1,62 @@
+.loading{
+    height:10vw;
+    width: 10vw;
+    margin: auto;
+    background-color: lightblue;
+    -webkit-animation: mymove  5s linear infinite;
+    -moz-animation: mymove  5s linear infinite;
+    animation: mymove  5s linear infinite;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0.6;
+}
+
+
+@-webkit-keyframes pulsate {
+    0% {background: black}
+    20% {background: lightred}
+    40% {background: lightblue}
+    60% {background: lightorange}
+    80% {background: lightgreen}
+    100% {background: black}
+}
+@-moz-keyframes pulsate {
+    0% {background: black}
+    20% {background: red}
+    40% {background: blue}
+    60% {background: orange}
+    80% {background: green}
+    100% {background: black}
+}
+@keyframes pulsate {
+    0% {background: black}
+    20% {background: red}
+    40% {background: blue}
+    60% {background: orange}
+    80% {background: green}
+    100% {background: black}
+}
+
+@keyframes mymove {
+    0%   {transform:scale(1,1);background: lightskyblue}
+    25%  {transform:scale(1.5,1.5);background: mediumblue}
+    50%  {transform:scale(2,2);background: lightskyblue}
+    75% {transform:scale(1.5,1.5);background: mediumblue}
+    100% {transform:scale(1,1);background: lightskyblue}
+     }
+ @-moz-keyframes mymove {
+    0%   {transform:scale(1,1);}
+    25%  {transform:scale(1.5,1.5);}
+    50%  {transform:scale(2,2);}
+    75% {transform:scale(1.5,1.5);}
+    100% {transform:scale(1,1);}
+         }
+ @-webkit-keyframes mymove {
+    0%   {transform:scale(1,1);}
+    25%  {transform:scale(1.5,1.5);}
+    50%  {transform:scale(2,2);}
+    75% {transform:scale(1.5,1.5);}
+    100% {transform:scale(1,1);}
+  }

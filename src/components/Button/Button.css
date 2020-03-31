@@ -1,0 +1,22 @@
+.button{
+  
+}
+
+.center{
+    width: 50%;
+    margin: auto;
+    background-color: #FF6600;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 3vh;
+    border-radius: 10px;
+    transition-duration: 300ms;
+    margin-top: 14vh;
+    font-weight: 900;
+}
+
+.center:hover{
+    background-color: white;
+    color: #FF6600;
+}

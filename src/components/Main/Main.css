@@ -1,0 +1,54 @@
+.planets{
+    display: flex;
+    justify-content: left;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 10px;
+    justify-self: left;
+    }
+
+
+.ships-container{
+    display: flex;
+    justify-content: left;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 10px;
+    justify-self: left;
+    padding: 10px;
+
+    
+
+    }
+
+.ships{
+    border: 2px solid #FF6600;
+    border-radius: 20px;
+    }
+
+    .ship-planet{
+        font-size: 42px;
+        text-align: center;
+        margin: 20px;
+        background-color: #FF6600;
+        padding: 10px;
+        text-transform: uppercase;
+        color: white;
+        border-radius: 12px;
+        }
+
+@media screen and (min-width:1300px){
+    .planets{
+        justify-content: center;
+    }
+    .ships-container{
+        justify-content: center;
+    }
+}
+.planets::-webkit-scrollbar { width: 0 !important }
+.planets { overflow: -moz-scrollbars-none; }
+.planets { -ms-overflow-style: none; }
+
+.ships-container::-webkit-scrollbar { width: 0 !important }
+.ships-container { overflow: -moz-scrollbars-none; }
+.ships-container { -ms-overflow-style: none; }

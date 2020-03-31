@@ -1,0 +1,30 @@
+.shipcontainer{
+    text-align: center;
+    padding: 20px;
+    margin:20px;
+    border-radius: 20px;
+    transition-duration: 300ms;
+    color: white;
+    
+}
+
+
+.active{
+
+    background-color: #FF6600;
+    color: white;
+    transform: scale(1.02,1.02);
+}
+
+
+.ship-name{
+    font-size: 34px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ship-total,.ship-speed,.ship-distance{
+    font-size: 28px;
+    font-weight: 500;
+
+}
